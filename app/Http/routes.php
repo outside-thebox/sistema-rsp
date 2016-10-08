@@ -18,3 +18,12 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+Route::resource('causas_existentes','Api\Mysql\CausasExistentesController'); 
+Route::resource('estados_civiles','Api\Mysql\EstadosCivilesController'); 
+Route::resource('generos','Api\Mysql\GenerosController'); 
+Route::resource('ingresos','Api\Mysql\IngresosController'); 
+Route::resource('jurisdicciones','Api\Mysql\JurisdiccionesController'); 
+Route::resource('nacionalidades','Api\Mysql\NacionalidadesController'); 
+Route::resource('profesiones','Api\Mysql\ProfesionesController'); 
+Route::resource('situaciones_legales','Api\Mysql\SituacionesLegalesController'); 
+Route::resource('tipos_documentos','Api\Mysql\TiposDocumentosController'); 
