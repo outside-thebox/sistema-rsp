@@ -14,7 +14,7 @@ class CreateTableCausasExistentes extends Migration
     {
         Schema::create('causas_existentes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('desripcion',50);
+            $table->string('descripcion',50);
             $table->timestamps();
             $table->softDeletes();
         });

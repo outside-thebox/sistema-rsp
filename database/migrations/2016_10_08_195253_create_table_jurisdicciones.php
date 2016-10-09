@@ -14,7 +14,7 @@ class CreateTableJurisdicciones extends Migration
     {
         Schema::create('jurisdicciones', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('desripcion',100);
+            $table->string('descripcion',100);
             $table->timestamps();
             $table->softDeletes();
         });

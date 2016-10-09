@@ -14,7 +14,7 @@ class CreateTableSituacionesLegales extends Migration
     {
         Schema::create('situaciones_legales', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('desripcion',50);
+            $table->string('descripcion',50);
             $table->timestamps();
             $table->softDeletes();
         });
