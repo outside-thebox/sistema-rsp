@@ -11,6 +11,8 @@ namespace App\Http\Controllers;
 
 
 use App\Api\Repositories\RepoIngreso;
+use Illuminate\Support\Facades\Input;
+
 
 class IngresosController extends Controller
 {
@@ -31,7 +33,21 @@ class IngresosController extends Controller
 
     public function create()
     {
-        return \View::make($this->view."formulario");
+        $form_data = ['route' => [$this->view.'store'], 'method' => 'POST','enctype' => 'multipart/form-data','id' => 'frmIngreso'];
+        return \View::make($this->view."formulario",compact('form_data'));
     }
+
+    public function store()
+    {
+        $data = Input::all();
+        $repoIngreso = new RepoIngreso($data);
+        $validacion = $repoIngreso->ValidarDatos();
+//        dd($validacion);
+        if($validacion === true)
+            return $repoIngreso->guardar();
+        else
+            return $validacion;
+    }
+
 
 }

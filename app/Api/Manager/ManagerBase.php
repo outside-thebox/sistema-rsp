@@ -29,11 +29,12 @@ abstract class ManagerBase {
 
     public function isValid(){
         $rules        = $this->getRules();
-        $messages     = $this->getMessages();
+        $messages        = $this->getMessages();
         $validation   = \Validator::make($this->data,$rules,$messages);
         $isValid      = $validation->passes();
-        $this->errors = $validation->errors();
-        return $this->mostrarErrores($isValid);
+        $this->errors = $validation->messages();
+
+        return $isValid;
     }
 
     public function mostrarErrores($isValid)

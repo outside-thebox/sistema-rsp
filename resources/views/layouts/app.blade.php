@@ -96,6 +96,91 @@
     {!! Html::script('bootstrap-material-design/js/jquery.dropdown.js') !!}
 
 
+    <script>
+
+        function cargando(themeName){
+            HoldOn.open({
+                theme:themeName,
+                message:"<h4>"+themeName+"</h4>"
+            });
+
+            setTimeout(function(){
+                HoldOn.close();
+            },300000);
+        }
+
+        function traerResultados(url)
+        {
+            cargando('Buscando resultados');
+            $.ajax({
+                type: "GET",
+                url: url,
+                assync: false,
+                success: function(data){
+                    mostrarDatos(data);
+                    HoldOn.close();
+                }
+            });
+        }
+
+
+
+        function peticionAjax(destino,datos,redireccionar)
+        {
+            redireccionar = redireccionar || 0;
+            cargando('Guardando...');
+            $.ajax({
+                type: "Post",
+                url: destino,
+                data: datos,
+                assync: true,
+                dataType: "html",
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(respuesta){
+
+                    //                console.log(respuesta);
+                    if(isNaN(respuesta) ) {
+                        if(respuesta.substr(0,4) == "http")
+                        {
+                            window.location.href = respuesta;
+                            respuesta = "Datos guardados correctamente";
+//                        HoldOn.close();
+                        }
+
+                        $("#contenido-modal").html(respuesta);
+                        $("#confirmacion").modal(function(){show:true});
+//                    HoldOn.close();
+                    }
+                    else
+                    {
+                        //                    $("#id_persona").val(respuesta);
+                        $("#contenido-modal").html("Datos guardados correctamente");
+                        $("#confirmacion").modal(function(){show:true});
+//                    HoldOn.close();
+                    }
+                    HoldOn.close();
+                },
+                error: function(result) {
+                    $("#contenido-modal").html("Hubo un error, consulta con el administrador");
+                    $("#confirmacion").modal(function(){show:true});
+                    HoldOn.close();
+                }
+
+
+            });
+        }
+
+        function darMensaje(mensaje)
+        {
+            $("#contenido-modal").html(mensaje);
+            $("#confirmacion").modal(function(){show:true});
+        }
+
+
+    </script>
+
     @yield('scripts')
 </body>
 </html>

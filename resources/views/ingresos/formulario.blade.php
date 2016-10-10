@@ -1,46 +1,12 @@
 @extends('layouts.app')
 
-@section('scripts')
-
-    <script>
-
-        function obtenerGeneros(selected)
-        {
-            selected = selected || "";
-            $("select[name=genero_id]").empty();
-            var url = "{{route('api.v1.generos.index')}}";
-            $.getJSON(url,function(data){
-                $.each(data, function(k,v){
-                    $.each(v, function(l,d){
-                        if(d.id == selected)
-                            $("select[name=genero_id]").append("<option value=\""+ d.id+"\" selected>"+ d.descripcion+"</option>");
-                        else
-                            $("select[name=genero_id]").append("<option value=\""+ d.id+"\">"+ d.descripcion+"</option>");
-                    });
-                });
-            });
-        }
-
-
-        $(function () {
-            $.material.init();
-
-            obtenerGeneros("");
-
-            $('.fecha').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
-
-            $(".select").dropdown({ "autoinit" : ".select" });
-        });
-
-
-
-    </script>
-
-@endsection
+@include('ingresos.scripts')
 
 
 @section('content')
 
+
+    {!! Form::model(isset($ingreso) ? $ingreso:null ,$form_data, ['role' => 'form']) !!}
     <div class="container">
         <h1>Agregando nuevo ingreso</h1>
 
@@ -63,8 +29,8 @@
             </div>
             <div class="form-group col-md-6">
                 {{ Form::label('fotos', 'Fotos',['class' => 'control-label']) }}
-                <input type="file" id="inputFile2" multiple="">
-                <input type="text" readonly="" class="form-control" placeholder="Browse2...">
+                <input type="file" id="inputFile2" name="fotos">
+                <input type="text" readonly="" class="form-control" placeholder="Seleccione las fotos...">
             </div>
         </div>
 
@@ -72,7 +38,7 @@
             <legend>Datos complementarios del detenido</legend>
 
             <div class="form-group label-floating col-md-6">
-                {{ Form::label('tipo_documento_declarado_id', 'Tipo de documento',['class' => 'control-label']) }}
+                {{ Form::label('tipo_documento_declarado_id', 'Tipo de documento declarado',['class' => 'control-label']) }}
                 {{ Form::select('tipo_documento_declarado_id',[], null, ['class' => 'form-control select']) }}
             </div>
             <div class="form-group label-floating col-md-6">
@@ -92,7 +58,7 @@
                 {{ Form::text('nombre_real',null, ['class' => 'form-control','maxlength' => 100]) }}
             </div>
             <div class="form-group label-floating col-md-6">
-                {{ Form::label('tipo_documento_real_id', 'Tipo de documento',['class' => 'control-label']) }}
+                {{ Form::label('tipo_documento_real_id', 'Tipo de documento real',['class' => 'control-label']) }}
                 {{ Form::select('tipo_documento_real_id',[], null, ['class' => 'form-control select']) }}
             </div>
             <div class="form-group label-floating col-md-6">
@@ -143,7 +109,7 @@
             <div class="form-group col-md-12">
                 <div class="checkbox">
                     <label>
-                        {{ Form::checkbox('reincidente', 'reincidente') }} ¿Reincidente?
+                        {{ Form::checkbox('reincidente', '1') }} ¿Reincidente?
                     </label>
                 </div>
             </div>
@@ -151,14 +117,14 @@
                 <div class="togglebutton">
                     <label>
                         ¿Curatela?
-                        {{ Form::checkbox('curatela', 'curatela') }}
+                        {{ Form::checkbox('curatela', '1') }}
                     </label>
                 </div>
             </div>
             <div class="form-group col-md-12">
                 <div class="checkbox">
                     <label>
-                        {{ Form::checkbox('medida_curativa', 'medida_curativa') }} ¿Medida curativa?
+                        {{ Form::checkbox('medida_curativa', '1') }} ¿Medida curativa?
                     </label>
                 </div>
             </div>
@@ -176,14 +142,14 @@
             <div class="form-group col-md-12">
                 <div class="checkbox">
                     <label>
-                        {{ Form::checkbox('alojado', 'alojado') }} ¿Alojado?
+                        {{ Form::checkbox('alojado', '1') }} ¿Alojado?
                     </label>
                 </div>
             </div>
             <div class="form-group col-md-12">
                 <div class="checkbox">
                     <label>
-                        {{ Form::checkbox('procesos_pendientes', 'procesos_pendientes') }} Procesos pendientes
+                        {{ Form::checkbox('procesos_pendientes', '1') }} Procesos pendientes
                     </label>
                 </div>
             </div>
@@ -207,4 +173,7 @@
             </div>
         </div>
     </div>
+    @include("components.modal")
+    {!! Form::close() !!}
+
 @endsection
