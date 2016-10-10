@@ -12,7 +12,9 @@ class ManagerIngreso extends ManagerBase {
     public function getRules()
     {
         return [
-            'fecha_ingreso' => 'required'
+            'fecha_ingreso' => 'required',
+            'fecha_nacimiento' => 'required',
+            'apellido_declarado' => 'required'
         ];
     }
 

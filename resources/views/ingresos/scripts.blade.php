@@ -34,7 +34,15 @@
             obtenerCombo("situacion_legal","","{{route('api.v1.situaciones_legales.index')}}");
             obtenerCombo("causa_existente","","{{route('api.v1.causas_existentes.index')}}");
 
-            $('.fecha').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
+//            $('.fecha').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
+
+
+            $('#fecha_nacimiento').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
+            $('#fecha_egreso').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
+            $('#fecha_ingreso').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false}).on('change', function(e, date)
+            {
+                $('#fecha_egreso').bootstrapMaterialDatePicker('setMinDate', date);
+            });
 
             $(".select").dropdown({ "autoinit" : ".select" });
 

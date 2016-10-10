@@ -28,7 +28,7 @@ class IngresosController extends Controller
 
     public function index()
     {
-
+        return \View::make($this->view."index");
     }
 
     public function create()

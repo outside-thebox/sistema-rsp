@@ -71,6 +71,7 @@
             </div>
         </div>
     </nav>
+    @include("components.modal")
 
     @yield('content')
 
