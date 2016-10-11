@@ -114,10 +114,9 @@
                 </div>
             </div>
             <div class="form-group col-md-12">
-                <div class="togglebutton">
+                <div class="checkbox">
                     <label>
-                        ¿Curatela?
-                        {{ Form::checkbox('curatela', '1') }}
+                        {{ Form::checkbox('curatela', '1') }} ¿Curatela?
                     </label>
                 </div>
             </div>

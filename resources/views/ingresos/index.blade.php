@@ -179,7 +179,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Búsqueda de ingresos</h1>
+        <h1>Búsqueda de ingresos <a href="{!! route('ingresos.create')!!}"><button class="btn btn-raised btn-success pull-right" >Agregar</button></a></h1>
         <br>
 
         <div class="form-inline">

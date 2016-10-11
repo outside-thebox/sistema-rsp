@@ -40,14 +40,14 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    DNIC
+                    Sistema Penitenciario
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{!! Route('ingresos.create')  !!} ">Ingresos</a></li>
+                    <li><a href="{!! Route('ingresos.index')  !!} ">Ingresos</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
