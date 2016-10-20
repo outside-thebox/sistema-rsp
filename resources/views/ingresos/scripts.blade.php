@@ -60,6 +60,14 @@
             });
 
 
+            $(".agregar_foto").click(function (event) {
+                event.preventDefault();
+                var contenedor = $(this).attr('data-contenedor');
+                var receptor = $(this).attr('data-receptor');
+                $(contenedor).clone().appendTo(receptor);
+            });
+
+
         });
 
 

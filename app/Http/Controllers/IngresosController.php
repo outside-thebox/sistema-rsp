@@ -40,9 +40,9 @@ class IngresosController extends Controller
     public function store()
     {
         $data = Input::all();
+//        dd($data);
         $repoIngreso = new RepoIngreso($data);
         $validacion = $repoIngreso->ValidarDatos();
-//        dd($validacion);
         if($validacion === true)
             return $repoIngreso->guardar();
         else

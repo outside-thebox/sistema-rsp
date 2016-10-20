@@ -165,12 +165,41 @@
                 {{ Form::select('causa_existente_id',[], null, ['class' => 'form-control select']) }}
             </div>
         </fieldset>
+
+
+        <fieldset>
+            <legend>Datos judiciales</legend>
+            <div id="divArchivos">
+                <div class="col-md-6" id="foto">
+                    {!! Form::label('foto','Foto',['class' => 'label_archivo']) !!}
+                    @include('components.add_file',array('nombre'=>'foto[archivos][]','i'=>0,'eliminar'=>false,'nombre_campo'=>'Fotos'))
+                </div>
+                <div id="fotos_append">
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#" class="agregar_foto" data-contenedor="#foto" data-receptor="#fotos_append">Agregar Más</a>
+                    </div>
+                </div>
+
+                @include('components.fotos')
+            </div>
+        </fieldset>
         <div class="row">
             <div class="form-group col-md-12" >
                 {!! Form::button("Guardar", ['type' => 'submit', 'class' => 'btn btn-raised btn-primary pull-right']) !!}
                 <a href="{!! route('ingresos.index') !!}" class="btn btn-raised btn-warning pull-right" style="margin-right: 10px">Cancelar</a>
             </div>
         </div>
+
+
+
+
+
+
+
+
     </div>
     {!! Form::close() !!}
 

@@ -27,6 +27,11 @@ class RepoIngreso extends RepoBase
         return new Ingresos();
     }
 
+    private function getRepoIngresoFotos()
+    {
+        return new RepoIngresosFotos();
+    }
+
     public function ValidarDatos()
     {
         $manager = new ManagerIngreso($this->getModel(),$this->data);
@@ -64,6 +69,13 @@ class RepoIngreso extends RepoBase
 
     private function postSave($id,$data)
     {
+        if(isset($data['foto']['archivos']))
+            $this->getRepoIngresoFotos()->save($id,$data['foto']['archivos']);
+
+
+
+
+
 
     }
 
