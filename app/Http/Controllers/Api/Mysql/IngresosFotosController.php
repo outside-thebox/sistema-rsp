@@ -19,6 +19,11 @@ class IngresosFotosController extends Api
         return [];
     }
 
+    function getValidRelations()
+    {
+        // TODO: Implement getValidRelations() method.
+    }
+
     
 }
 

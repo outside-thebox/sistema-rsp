@@ -1,5 +1,6 @@
 <?php namespace App\Api\Entities\Mysql;
 
+use App\Api\Helpers\FunctionsSpecials;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use JuaGuz\ApiGenerator\ApiModelInterface;
@@ -65,5 +66,19 @@ class Ingresos extends Model implements ApiModelInterface{
 		return $this->hasOne('App\Api\Entities\Mysql\CausasExistentes', 'causa_existente_id', 'id');
 	}
 
+	public function getFechaNacimientoAttribute()
+	{
+		return FunctionsSpecials::DateMysqlToNormal($this->attributes['fecha_nacimiento']);
+	}
+
+	public function getFechaIngresoAttribute()
+	{
+		return FunctionsSpecials::DateMysqlToNormal($this->attributes['fecha_ingreso']);
+	}
+
+	public function getFechaEgresoAttribute()
+	{
+		return FunctionsSpecials::DateMysqlToNormal($this->attributes['fecha_egreso']);
+	}
 
 }

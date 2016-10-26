@@ -33,7 +33,7 @@ class CreateTableIngresos extends Migration
             $table->string('lugar_nacimiento',100);
             $table->integer('genero_id')->unsigned()->nullable();
             $table->integer('estado_civil_id')->unsigned()->nullable();
-            $table->integer('profesiones_id')->unsigned()->nullable();
+            $table->integer('profesion_id')->unsigned()->nullable();
             $table->string('identificador_local',20);
             $table->date('fecha_egreso');
             $table->boolean('reincidente');
@@ -55,7 +55,7 @@ class CreateTableIngresos extends Migration
             $table->foreign('nacionalidad_id')->references('id')->on('nacionalidades');
             $table->foreign('genero_id')->references('id')->on('generos');
             $table->foreign('estado_civil_id')->references('id')->on('estados_civiles');
-            $table->foreign('profesiones_id')->references('id')->on('profesiones');
+            $table->foreign('profesion_id')->references('id')->on('profesiones');
             $table->foreign('jurisdiccion_id')->references('id')->on('jurisdicciones');
             $table->foreign('situacion_legal_id')->references('id')->on('situaciones_legales');
             $table->foreign('causa_existente_id')->references('id')->on('causas_existentes');

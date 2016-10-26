@@ -20,6 +20,7 @@ Route::auth();
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index');
+    Route::get('ingresos/show/{ingresos}',['as'=>'ingresos.show','uses'=>'IngresosController@show']);
     Route::resource('ingresos','IngresosController');
 
 });

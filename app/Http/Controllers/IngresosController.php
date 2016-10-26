@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 
 
+use App\Api\Entities\Mysql\Ingresos;
 use App\Api\Repositories\RepoIngreso;
 use Illuminate\Support\Facades\Input;
 
@@ -47,6 +48,12 @@ class IngresosController extends Controller
             return $repoIngreso->guardar();
         else
             return $validacion;
+    }
+
+    public function show(Ingresos $ingresos)
+    {
+        $ingreso = $ingresos;
+        return \View::make($this->view."show",compact('ingreso'));
     }
 
 

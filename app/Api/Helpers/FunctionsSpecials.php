@@ -13,10 +13,14 @@ class FunctionsSpecials
 {
     static public function DateMysqlToNormal($date)
     {
-        if($date)
+        if($date != "" && $date != "0000-00-00")
         {
             $fecha = \DateTime::createFromFormat('Y-m-d', $date);
             return $fecha->format('d/m/Y');
+        }
+        else
+        {
+            return "";
         }
     }
 

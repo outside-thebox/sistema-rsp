@@ -53,11 +53,16 @@
 
                 var len = data.length;
                 var txt = "";
-                var urlCreate = '';
+                var urlShow = '';
+
                 if(len > 0){
 
                     for(var i=0;i<len;i++)
                     {
+                        var url = "{{route('ingresos.index')}}";
+                        urlShow = url + "/show/" + data[i].id;
+                        var boton_ver = "<a title='Ver' style='margin-left: 7px' href='" + urlShow + "'><i class='glyphicon glyphicon-eye-open styleButtonImage' ></i></a>";
+
                         txt += "<tr>";
 
                         txt += "<td>"+data[i].nombre_declarado+"</td>";
@@ -65,7 +70,7 @@
                         txt += "<td>"+data[i].nro_documento_declarado+ "</td>";
                         txt += "<td>"+data[i].apellido_real+"</td>";
                         txt += "<td>"+data[i].nombre_real+"</td>";
-                        txt += "<td>Acciones</td>";
+                        txt += "<td>"+boton_ver+"</td>";
                         txt += "</tr>";
                     }
                     if(txt != ""){
@@ -186,16 +191,16 @@
 
             <div class="form-group label-floating">
                 {{ Form::label('fecha_ingreso', 'Fecha de ingreso',['class' => 'control-label']) }}
-                {{ Form::text( 'fecha_ingreso',null, ['class' => 'form-control fecha']) }}
+                {{ Form::text( 'fecha_ingreso','26/10/2016', ['class' => 'form-control fecha']) }}
             </div>
 
             <div class="form-group label-floating">
                 {{ Form::label('apellido_declarado', 'Apellido declarado',['class' => 'control-label']) }}
-                {{ Form::text( 'apellido_declarado',null, ['class' => 'form-control','maxlength' => 100]) }}
+                {{ Form::text( 'apellido_declarado','Ladiani', ['class' => 'form-control','maxlength' => 100]) }}
             </div>
             <div class="form-group label-floating">
                 {{ Form::label('fecha_nacimiento', 'Fecha de nacimiento',['class' => 'control-label']) }}
-                {{ Form::text( 'fecha_nacimiento',null, ['class' => 'form-control fecha']) }}
+                {{ Form::text( 'fecha_nacimiento','12/04/1988', ['class' => 'form-control fecha']) }}
             </div>
 
             {{ Form::button('Buscar',['id' => 'buscar','class' => 'btn btn-raised btn-info']) }}
