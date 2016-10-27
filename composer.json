@@ -9,7 +9,9 @@
         "laravel/framework": "5.2.*",
         "juaguz/apigenerator": "1.4.*",
         "laravelcollective/html": "5.2.*",
-        "fzaninotto/faker": "^1.6"
+        "fzaninotto/faker": "^1.6",
+        "maatwebsite/excel": "~2.1.0",
+        "barryvdh/laravel-dompdf": "^0.7.0"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",

@@ -114,7 +114,7 @@
                 {{ Form::select('profesion_id',[], null, ['class' => 'form-control select']) }}
             </div>
             <div class="form-group label-floating col-md-6">
-                {{ Form::label('identificador_local', 'Lugar de nacimiento',['class' => 'control-label']) }}
+                {{ Form::label('identificador_local', 'Identificador local',['class' => 'control-label']) }}
                 {{ Form::text('identificador_local',null, ['class' => 'form-control','maxlength' => 200]) }}
             </div>
             <div class="form-group label-floating col-md-6">

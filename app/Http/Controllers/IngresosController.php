@@ -12,6 +12,7 @@ namespace App\Http\Controllers;
 
 use App\Api\Entities\Mysql\Ingresos;
 use App\Api\Repositories\RepoIngreso;
+use Barryvdh\DomPDF\Facade as PDF;
 use Illuminate\Support\Facades\Input;
 
 
@@ -54,6 +55,27 @@ class IngresosController extends Controller
     {
         $ingreso = $ingresos;
         return \View::make($this->view."show",compact('ingreso'));
+    }
+
+    public function edit($id)
+    {
+        dd($id);
+    }
+
+    public function exportarPDF(Ingresos $ingresos)
+    {
+        $ingreso = $ingresos;
+        /*foreach ($entidad->personalXEntidad as $p)
+        {
+            $p->personal->cargo_personal = $p->personal->cargo->descripcion;
+            $p->personal->tipo_persona = $p->personal->objTipoPersona->descripcion;
+            array_push($lista,$p->personal);
+        }
+        $entidad->personalXEntidad = $lista;
+        */
+
+        $pdf = PDF::loadView('ingresos.PDF', compact("ingreso"));
+        return $pdf->download("Ingreso.pdf");
     }
 
 

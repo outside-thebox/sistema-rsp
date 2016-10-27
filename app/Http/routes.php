@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Input;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,7 +23,13 @@ Route::auth();
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index');
     Route::get('ingresos/show/{ingresos}',['as'=>'ingresos.show','uses'=>'IngresosController@show']);
+    Route::get('ingresos/{ingresos}/exportarPDF',['as'=>'ingresos.exportarPDF','uses'=>'IngresosController@exportarPDF']);
     Route::resource('ingresos','IngresosController');
+
+    Route::get('files/descargar',array('as'=>'archivos.descargar','uses'=>function(){
+        $path = Input::get('q');
+        return Response::download($path);
+    }));
 
 });
 

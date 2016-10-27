@@ -2,20 +2,135 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="178809ab-c316-4869-be81-648e116dbd30" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ingresos/shared_functions.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ingresos/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_10_08_195538_create_table_ingresos.php" afterPath="$PROJECT_DIR$/database/migrations/2016_10_08_195538_create_table_ingresos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Api/Helpers/FunctionsSpecials.php" afterPath="$PROJECT_DIR$/app/Api/Helpers/FunctionsSpecials.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ingresos/PDF.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ingresos/fotos.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fotos/6-CvJAqTLWIAA3nON.jpg" afterPath="$PROJECT_DIR$/public/fotos/6-CvJAqTLWIAA3nON.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fotos/7-Captura de pantalla de 2016-10-18 15:46:05.png" afterPath="$PROJECT_DIR$/public/fotos/7-Captura de pantalla de 2016-10-18 15:46:05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fotos/8-14333795_1107662945955368_7627063763416739429_n.jpg" afterPath="$PROJECT_DIR$/public/fotos/8-14333795_1107662945955368_7627063763416739429_n.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.eot" afterPath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.ttf" afterPath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.woff2" afterPath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.woff" afterPath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_alerts.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_alerts.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_alerts.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_alerts.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_bootstrap-material-design.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_bootstrap-material-design.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_buttons.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_buttons.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_buttons.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_buttons.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_cards.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_cards.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_cards.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_cards.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_checkboxes.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_checkboxes.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_checkboxes.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_checkboxes.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_colors.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_colors.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_colors.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_colors.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_core.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_core.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_core.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_core.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_dialogs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_dialogs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_dialogs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_dialogs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_dividers.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_dividers.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_dividers.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_dividers.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_form.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_form.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_form.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_form.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_icons-material-design.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_icons-material-design.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_icons.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_icons.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_import-bs-less.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_import-bs-less.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_import-bs-less.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_import-bs-less.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_import-bs-sass.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_import-bs-sass.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_import-bs-sass.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_import-bs-sass.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_inputs-size.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_inputs-size.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_inputs-size.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_inputs-size.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_inputs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_inputs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_inputs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_inputs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_lists.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_lists.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_lists.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_lists.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_mixins-utilities.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_mixins-utilities.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_mixins-utilities.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_mixins-utilities.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_mixins.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_mixins.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_mixins.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_mixins.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_navbar.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_navbar.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_navbar.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_navbar.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_panels.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_panels.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_panels.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_panels.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1c32c7092ed73d9a5b0ba05b078e6232713c4675/_plugin-dropdownjs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1c32c7092ed73d9a5b0ba05b078e6232713c4675/_plugin-dropdownjs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/c36839dada9a9d443e1edf3341e7ef0b9ca910a2/_plugin-dropdownjs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/c36839dada9a9d443e1edf3341e7ef0b9ca910a2/_plugin-dropdownjs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1c32c7092ed73d9a5b0ba05b078e6232713c4675/_plugin-nouislider.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1c32c7092ed73d9a5b0ba05b078e6232713c4675/_plugin-nouislider.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/c36839dada9a9d443e1edf3341e7ef0b9ca910a2/_plugin-nouislider.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/c36839dada9a9d443e1edf3341e7ef0b9ca910a2/_plugin-nouislider.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1c32c7092ed73d9a5b0ba05b078e6232713c4675/_plugin-selectize.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1c32c7092ed73d9a5b0ba05b078e6232713c4675/_plugin-selectize.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/c36839dada9a9d443e1edf3341e7ef0b9ca910a2/_plugin-selectize.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/c36839dada9a9d443e1edf3341e7ef0b9ca910a2/_plugin-selectize.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1c32c7092ed73d9a5b0ba05b078e6232713c4675/_plugin-snackbarjs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1c32c7092ed73d9a5b0ba05b078e6232713c4675/_plugin-snackbarjs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/c36839dada9a9d443e1edf3341e7ef0b9ca910a2/_plugin-snackbarjs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/c36839dada9a9d443e1edf3341e7ef0b9ca910a2/_plugin-snackbarjs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_plugins.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_plugins.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_plugins.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_plugins.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_popups.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_popups.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_popups.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_popups.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_progress.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_progress.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_progress.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_progress.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_radios.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_radios.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_radios.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_radios.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_shadows.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_shadows.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_shadows.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_shadows.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_tabs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_tabs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_tabs.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_tabs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_themes.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_themes.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_themes.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_themes.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_togglebutton.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_togglebutton.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_togglebutton.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_togglebutton.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_typography.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_typography.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_typography.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_typography.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1e1dcca864a2e0edda6f7669ac643f268c880fdc/_variables.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/1e1dcca864a2e0edda6f7669ac643f268c880fdc/_variables.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_variables.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_variables.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_variables.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_variables.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/d2594f1532324eab51442ffb8cab857877968446/_variables.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/d2594f1532324eab51442ffb8cab857877968446/_variables.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_welljumbo.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/_welljumbo.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_welljumbo.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/_welljumbo.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/bootstrap-material-design.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/bootstrap-material-design.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/bootstrap-material-design.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/bootstrap-material-design.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/ripples.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/4661e7cdeb80c77fec0a9b3cbdad9be18ebb890d/ripples.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/ripples.scssc" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.sass-cache/a884eb6446327b2f061511ee0899db705944e6f8/ripples.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/.name" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.ruby-gemset" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.ruby-gemset" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.ruby-version" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.ruby-version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/HoldOn.css" afterPath="$PROJECT_DIR$/public/assets/css/HoldOn.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/HoldOn.js" afterPath="$PROJECT_DIR$/public/assets/js/HoldOn.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Api/Entities/Mysql/Ingresos.php" afterPath="$PROJECT_DIR$/app/Api/Entities/Mysql/Ingresos.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/IngresosController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IngresosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Mysql/IngresosFotosController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Mysql/IngresosFotosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.svg" afterPath="$PROJECT_DIR$/public/assets/font/Material-Design-Icons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Api/Repositories/RepoIngresosFotos.php" afterPath="$PROJECT_DIR$/app/Api/Repositories/RepoIngresosFotos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/bootstrap-material-datetimepicker.css" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-material-datetimepicker.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/bootstrap-material-datetimepicker.js" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap-material-datetimepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/bootstrap-material-design-3.iml" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/bootstrap-material-design-3.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/css/bootstrap-material-design.css.map" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/css/bootstrap-material-design.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/css/bootstrap-material-design.css" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/css/bootstrap-material-design.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/css/bootstrap-material-design.min.css.map" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/css/bootstrap-material-design.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/css/bootstrap-material-design.min.css" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/css/bootstrap-material-design.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/libraries/bootstrap_material_design_3_node_modules.xml" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/libraries/bootstrap_material_design_3_node_modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/encodings.xml" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/ingresos/formulario.blade.php" afterPath="$PROJECT_DIR$/resources/views/ingresos/formulario.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/components/galeria.blade.php" afterPath="$PROJECT_DIR$/resources/views/components/galeria.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/ingresos/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/ingresos/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/css/jquery.dropdown.css" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/css/jquery.dropdown.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/js/jquery.dropdown.js" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/js/jquery.dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/js/material.js" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/js/material.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/js/material.min.js.map" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/js/material.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/js/material.min.js" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/js/material.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/misc.xml" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/modules.xml" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/moment.min.js" afterPath="$PROJECT_DIR$/public/assets/js/moment.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/css/ripples.css.map" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/css/ripples.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/css/ripples.css" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/css/ripples.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/js/ripples.js" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/js/ripples.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/css/ripples.min.css.map" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/css/ripples.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/css/ripples.min.css" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/css/ripples.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/js/ripples.min.js.map" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/js/ripples.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/js/ripples.min.js" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/js/ripples.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/ingresos/scripts.blade.php" afterPath="$PROJECT_DIR$/resources/views/ingresos/scripts.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/ingresos/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/ingresos/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/vcs.xml" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/workspace.xml" afterPath="$PROJECT_DIR$/public/bootstrap-material-design/.idea/workspace.xml" />
     </list>
     <ignored path="sistema-rsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,75 +154,22 @@
       <file leaf-file-name="formulario.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/ingresos/formulario.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-              <folding>
-                <element signature="e#2240#2264#0#HTML" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-7.064516">
+              <caret line="100" column="37" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/ingresos/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52249634">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
-                <element signature="e#3028#3052#0#HTML" expanded="true" />
+                <element signature="e#1780#1806#0#HTML" expanded="true" />
+                <element signature="e#1909#1935#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ingresos/scripts.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="33" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shared_functions.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ingresos/shared_functions.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="69" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ingresos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Api/Entities/Mysql/Ingresos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.655172">
-              <caret line="80" column="42" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
-              <folding>
-                <element signature="e#41#79#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FunctionsSpecials.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Api/Helpers/FunctionsSpecials.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -116,9 +178,88 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IngresosController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+              <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
               <folding>
                 <element signature="e#123#159#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepoIngresosFotos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Api/Repositories/RepoIngresosFotos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.052249637">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ingresos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Api/Entities/Mysql/Ingresos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.172413">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding>
+                <element signature="e#41#79#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PDF.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/ingresos/PDF.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#fieldset#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1477539150679" expanded="true" signature="6:60" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fotos.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/ingresos/fotos.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="93" selection-start-line="2" selection-start-column="93" selection-end-line="2" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="galeria.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/components/galeria.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="118" selection-start-line="15" selection-start-column="118" selection-end-line="15" selection-end-column="118" />
+              <folding>
+                <element signature="e#822#845#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+              <folding>
+                <element signature="e#7#392#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,20 +278,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/views/components/add_file.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ingresos/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Mysql/IngresosFotosController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/IngresosController.php" />
-        <option value="$PROJECT_DIR$/app/Api/Entities/Mysql/Ingresos.php" />
         <option value="$PROJECT_DIR$/app/Api/Helpers/FunctionsSpecials.php" />
         <option value="$PROJECT_DIR$/resources/views/ingresos/scripts.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ingresos/formulario.blade.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/806d18a9d3ed2bba2ded723297c636b7b70a97f0.php" />
         <option value="$PROJECT_DIR$/resources/views/ingresos/shared_functions.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ingresos/show.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_10_08_195538_create_table_ingresos.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/resources/views/ingresos/index.blade.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/IngresosController.php" />
+        <option value="$PROJECT_DIR$/resources/views/ingresos/formulario.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ingresos/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ingresos/fotos.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ingresos/PDF.blade.php" />
+        <option value="$PROJECT_DIR$/app/Api/Entities/Mysql/Ingresos.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/galeria.blade.php" />
+        <option value="$PROJECT_DIR$/app/Api/Repositories/RepoIngresosFotos.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -202,6 +349,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -351,57 +499,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-rsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-rsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-rsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-rsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-rsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-rsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,39 +539,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-rsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistema-rsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mysql" />
+              <option name="myItemId" value="Repositories" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -500,6 +571,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
   </component>
@@ -527,8 +604,6 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20518687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -538,7 +613,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -546,6 +623,9 @@
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -557,34 +637,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Mysql/SituacionesLegalesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Mysql/TiposDocumentosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Mysql/EstadosCivilesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Mysql/GenerosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Mysql/CausasExistentesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -669,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Api/Manager/ManagerBase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -729,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7364568">
           <caret line="55" column="81" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28448275">
           <caret line="11" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,9 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#122#158#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,15 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33235726">
           <caret line="569" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Api/Repositories/RepoIngresosFotos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,15 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,9 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.574746">
           <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,43 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.574746">
           <caret line="24" column="5" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IngresosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-          <folding>
-            <element signature="e#123#159#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Api/Entities/Mysql/IngresosFotos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Api/Entities/Mysql/Ingresos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.655172">
-          <caret line="80" column="42" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
-          <folding>
-            <element signature="e#41#79#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -873,25 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10449927">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ingresos/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.642961">
-          <caret line="216" column="37" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ingresos/formulario.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-          <folding>
-            <element signature="e#2240#2264#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47024673">
           <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68650216">
           <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,17 +897,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3918723">
           <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.448276">
+          <caret line="14" column="6" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="208" column="47" selection-start-line="208" selection-start-column="47" selection-end-line="208" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ingresos/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="52" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ingresos/formulario.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.064516">
+          <caret line="100" column="37" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ingresos/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52249634">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <element signature="e#3028#3052#0#HTML" expanded="true" />
+            <element signature="e#1780#1806#0#HTML" expanded="true" />
+            <element signature="e#1909#1935#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Api/Entities/Mysql/IngresosFotos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Api/Entities/Mysql/Ingresos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.172413">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ingresos/PDF.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#fieldset#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1477539150679" expanded="true" signature="6:60" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ingresos/fotos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="93" selection-start-line="2" selection-start-column="93" selection-end-line="2" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/galeria.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="118" selection-start-line="15" selection-start-column="118" selection-end-line="15" selection-end-column="118" />
+          <folding>
+            <element signature="e#822#845#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IngresosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding>
+            <element signature="e#123#159#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Api/Repositories/RepoIngresosFotos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.052249637">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

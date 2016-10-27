@@ -14,11 +14,12 @@ class RepoIngresosFotos {
         {
             if ($archivo) {
                 $data = [];
-                $data['foto'] = $archivo->getClientOriginalName();
                 $data['ingreso_id'] = $ingreso_id;
                 $model = new IngresosFotos($data);
                 $model->save();
                 $id = $model->id;
+                $model->foto = $path.$id."-".$archivo->getClientOriginalName();
+                $model->save();
                 $archivo->move($path,$id."-".$archivo->getClientOriginalName());
             }
 

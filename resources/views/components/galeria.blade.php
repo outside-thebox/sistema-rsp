@@ -9,11 +9,11 @@
                 @foreach($fotos as $foto)
                     @if(is_object($foto))
                         @if(substr($foto->path, -3) == "pdf")
-                            <div class="col-md-2" style="cursor: zoom-in"><a href="{{ Route('archivos.descargar')}}?q={{ $foto->path }}" target="_blank" >
+                            <div class="col-md-2" style="cursor: zoom-in"><a href="{{ Route('archivos.descargar')}}?q={{ $foto->foto }}" target="_blank" >
                                     <img src="{{ Route('archivos.descargar')}}?q=imagen.jpg" width="150px" height="150px"></a>
                                 </div>
                         @else
-                            <div class="col-md-2" style="cursor: zoom-in"><a href="{{ Route('archivos.descargar')}}?q={{ $foto->path }}" target="_blank" ><img src="{{ Route('archivos.descargar')}}?q={{ $foto->path }}" width="150px" height="150px"></a></div>
+                            <div class="col-md-2" style="cursor: zoom-in"><a href="{{ Route('archivos.descargar')}}?q={{ $foto->foto }}" target="_blank" ><img src="{{ Route('archivos.descargar')}}?q={{ $foto->foto }}" width="150px" height="150px"></a></div>
                         @endif
                     @endif
                 @endforeach

@@ -54,6 +54,7 @@
                 var len = data.length;
                 var txt = "";
                 var urlShow = '';
+                var urlEdit = '';
 
                 if(len > 0){
 
@@ -61,7 +62,9 @@
                     {
                         var url = "{{route('ingresos.index')}}";
                         urlShow = url + "/show/" + data[i].id;
+                        urlEdit = url + "/" + data[i].id + "/edit";
                         var boton_ver = "<a title='Ver' style='margin-left: 7px' href='" + urlShow + "'><i class='glyphicon glyphicon-eye-open styleButtonImage' ></i></a>";
+                        var boton_editar = "<a title='Editar' href='" + urlEdit + "'><i class='glyphicon glyphicon-edit styleButtonImage' ></i></a>";
 
                         txt += "<tr>";
 
@@ -70,7 +73,7 @@
                         txt += "<td>"+data[i].nro_documento_declarado+ "</td>";
                         txt += "<td>"+data[i].apellido_real+"</td>";
                         txt += "<td>"+data[i].nombre_real+"</td>";
-                        txt += "<td>"+boton_ver+"</td>";
+                        txt += "<td>"+boton_ver +"    "+ boton_editar+"</td>";
                         txt += "</tr>";
                     }
                     if(txt != ""){

@@ -23,47 +23,47 @@ class Ingresos extends Model implements ApiModelInterface{
 
 	public function tipo_documento_declarado()
 	{
-		return $this->hasOne('App\Api\Entities\Mysql\TiposDocumentos', 'tipo_documento_declarado_id', 'id');
+		return $this->hasOne('App\Api\Entities\Mysql\TiposDocumentos', 'id', 'tipo_documento_declarado_id');
 	}
 
 	public function tipo_documento_real()
 	{
-		return $this->hasOne('App\Api\Entities\Mysql\TiposDocumentos', 'tipo_documento_real_id', 'id');
+		return $this->hasOne('App\Api\Entities\Mysql\TiposDocumentos', 'id', 'tipo_documento_real_id');
 	}
 
 	public function nacionalidad()
 	{
-		return $this->hasOne('App\Api\Entities\Mysql\Nacionalidades', 'nacionalidad_id', 'id');
+		return $this->hasOne('App\Api\Entities\Mysql\Nacionalidades', 'id', 'nacionalidad_id');
 	}
 
 	public function genero()
 	{
-		return $this->hasOne('App\Api\Entities\Mysql\Generos', 'genero_id', 'id');
+		return $this->hasOne('App\Api\Entities\Mysql\Generos', 'id', 'genero_id');
 	}
 
 	public function estado_civil()
 	{
-		return $this->hasOne('App\Api\Entities\Mysql\EstadosCiviles', 'estado_civil_id', 'id');
+		return $this->hasOne('App\Api\Entities\Mysql\EstadosCiviles', 'id', 'estado_civil_id');
 	}
 
 	public function profesion()
 	{
-		return $this->hasOne('App\Api\Entities\Mysql\Profesiones', 'profesion_id', 'id');
+		return $this->hasOne('App\Api\Entities\Mysql\Profesiones', 'id', 'profesion_id');
 	}
 
 	public function jurisdiccion()
 	{
-		return $this->hasOne('App\Api\Entities\Mysql\Jurisdicciones', 'jurisdiccion_id', 'id');
+		return $this->hasOne('App\Api\Entities\Mysql\Jurisdicciones', 'id', 'jurisdiccion_id');
 	}
 
 	public function situacion_legal()
 	{
-		return $this->hasOne('App\Api\Entities\Mysql\SituacionesLegales', 'situacion_legal_id', 'id');
+		return $this->hasOne('App\Api\Entities\Mysql\SituacionesLegales', 'id', 'situacion_legal_id');
 	}
 
 	public function causa_existente()
 	{
-		return $this->hasOne('App\Api\Entities\Mysql\CausasExistentes', 'causa_existente_id', 'id');
+		return $this->hasOne('App\Api\Entities\Mysql\CausasExistentes', 'id', 'causa_existente_id');
 	}
 
 	public function getFechaNacimientoAttribute()
@@ -79,6 +79,11 @@ class Ingresos extends Model implements ApiModelInterface{
 	public function getFechaEgresoAttribute()
 	{
 		return FunctionsSpecials::DateMysqlToNormal($this->attributes['fecha_egreso']);
+	}
+
+	public function ingresos_fotos()
+	{
+		return $this->hasMany('App\Api\Entities\Mysql\IngresosFotos', 'ingreso_id', 'id');
 	}
 
 }
