@@ -54,13 +54,29 @@ class RepoIngreso extends RepoBase
         if($data['fecha_egreso'])
             $data['fecha_egreso'] = FunctionsSpecials::DateNormalToMysql($this->data['fecha_egreso']);
 
+        if(!isset($data['reincidente']))
+            $data['reincidente'] = 0;
+
+        if(!isset($data['curatela']))
+            $data['curatela'] = 0;
+
+        if(!isset($data['medida_curativa']))
+            $data['medida_curativa'] = 0;
+
+        if(!isset($data['alojado']))
+            $data['alojado'] = 0;
+
+        if(!isset($data['procesos_pendientes']))
+            $data['procesos_pendientes'] = 0;
+
         return $data;
     }
 
     public function guardar()
     {
         $data = $this->prepareData($this->data);
-        $manager = new ManagerIngreso($this->getModel(),$data);
+//        dd($this->getModel()->firstOrNew(["id"=>$data['id']]));
+        $manager = new ManagerIngreso($this->getModel()->firstOrNew(["id"=>$data['id']]),$data);
         $manager->save();
         $id = $manager->getEntity()->id;
         $this->postSave($id,$data);

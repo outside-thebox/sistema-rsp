@@ -41,8 +41,8 @@
 
     <div class="row">
         <div class="form-group col-md-12" id="botones_confirmar">
-            <a href="{{ Route('ingresos.exportarPDF',$ingreso->id) }}" class="btn btn-info pull-right" target="_blank" style="margin-right: 10px">Exportar</a>
-            <a href="{!! route('ingresos.index') !!}" class="btn btn-success pull-right" style="margin-right: 10px">Volver</a>
+            <a href="{{ Route('ingresos.exportarPDF',$ingreso->id) }}" class="btn btn-raised btn-primary pull-right" target="_blank" style="margin-right: 10px">Exportar</a>
+            <a href="{!! route('ingresos.index') !!}" class="btn btn-raised btn-warning pull-right" style="margin-right: 10px">Volver</a>
         </div>
     </div>
 

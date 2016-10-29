@@ -8,8 +8,9 @@
 
     {!! Form::model(isset($ingreso) ? $ingreso:null ,$form_data, ['role' => 'form']) !!}
     <div class="container">
-        <h1>Agregando nuevo ingreso</h1>
+        <h1>{{ $accion }} ingreso</h1>
 
+        {{ Form::hidden('id',null,[]) }}
         <div class="row">
             <div class="form-group label-floating col-md-6">
                 {{ Form::label('fecha_ingreso', 'Fecha de ingreso',['class' => 'control-label']) }}
@@ -42,7 +43,7 @@
                     </div>
                 </div>
 
-                @include('components.fotos')
+                @include('ingresos.fotos')
 
             </div>
 
@@ -171,7 +172,7 @@
 
             <div class="form-group label-floating col-md-12">
                 {{ Form::label('observaciones', 'Observaciones',['class' => 'control-label']) }}
-                {{ Form::textarea('observaciones', null, ['class' => 'form-control','style' => 'resize: none']) }}
+                {{ Form::textarea('observaciones', null, ['class' => 'form-control','style' => 'resize: none','maxlength' => 1000]) }}
             </div>
         </fieldset>
         <fieldset>

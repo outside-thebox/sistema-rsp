@@ -28,9 +28,9 @@
         </div>
 
     </div>
-
-    @include('ingresos.fotos')
-
+    @if(!isset($ban))
+        @include('ingresos.fotos')
+    @endif
     <fieldset style="margin-top: 30px">
         <legend>Datos complementarios del detenido</legend>
 

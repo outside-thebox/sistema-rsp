@@ -194,16 +194,16 @@
 
             <div class="form-group label-floating">
                 {{ Form::label('fecha_ingreso', 'Fecha de ingreso',['class' => 'control-label']) }}
-                {{ Form::text( 'fecha_ingreso','26/10/2016', ['class' => 'form-control fecha']) }}
+                {{ Form::text( 'fecha_ingreso',null, ['class' => 'form-control fecha']) }}
             </div>
 
             <div class="form-group label-floating">
                 {{ Form::label('apellido_declarado', 'Apellido declarado',['class' => 'control-label']) }}
-                {{ Form::text( 'apellido_declarado','Ladiani', ['class' => 'form-control','maxlength' => 100]) }}
+                {{ Form::text( 'apellido_declarado',null, ['class' => 'form-control','maxlength' => 100]) }}
             </div>
             <div class="form-group label-floating">
                 {{ Form::label('fecha_nacimiento', 'Fecha de nacimiento',['class' => 'control-label']) }}
-                {{ Form::text( 'fecha_nacimiento','12/04/1988', ['class' => 'form-control fecha']) }}
+                {{ Form::text( 'fecha_nacimiento',null, ['class' => 'form-control fecha']) }}
             </div>
 
             {{ Form::button('Buscar',['id' => 'buscar','class' => 'btn btn-raised btn-info']) }}

@@ -8,7 +8,7 @@ use JuaGuz\ApiGenerator\ApiModelInterface;
 class Ingresos extends Model implements ApiModelInterface{
 	use SoftDeletes;
 	protected $primaryKey = "id";
-	protected $fillable = ['id','fecha_ingreso','apellido_declarado','nombre_declarado','fecha_nacimiento','tipo_documento_declarado_id','nro_documento_declarado','origen_documento_declarado','apellido_real','nombre_real','tipo_documento_real_id','nro_documento_real','origen_documento_real','otros_nombres','alias','nacionalidad_id','lugar_nacimiento','genero_id','estado_civil_id','profesiones_id','identificador_local','fecha_egreso','reincidente','curatela','medida_curativa','alojado','jurisdiccion_id','procesos_pendientes','situacion_legal_id','observaciones','causa_existente_id','created_at','updated_at','deleted_at',];
+	protected $fillable = ['id','fecha_ingreso','apellido_declarado','nombre_declarado','fecha_nacimiento','tipo_documento_declarado_id','nro_documento_declarado','origen_documento_declarado','apellido_real','nombre_real','tipo_documento_real_id','nro_documento_real','origen_documento_real','otros_nombres','alias','nacionalidad_id','lugar_nacimiento','genero_id','estado_civil_id','profesion_id','identificador_local','fecha_egreso','reincidente','curatela','medida_curativa','alojado','jurisdiccion_id','procesos_pendientes','situacion_legal_id','observaciones','causa_existente_id','created_at','updated_at','deleted_at',];
 	protected $dates = ['deleted_at'];
 	protected $table = 'ingresos';
 	protected $connection = 'mysql';

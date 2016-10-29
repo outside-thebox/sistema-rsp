@@ -36,7 +36,8 @@ class IngresosController extends Controller
     public function create()
     {
         $form_data = ['route' => [$this->view.'store'], 'method' => 'POST','enctype' => 'multipart/form-data','id' => 'frmIngreso'];
-        return \View::make($this->view."formulario",compact('form_data'));
+        $accion = "Agregar";
+        return \View::make($this->view."formulario",compact('form_data','accion'));
     }
 
     public function store()
@@ -46,7 +47,10 @@ class IngresosController extends Controller
         $repoIngreso = new RepoIngreso($data);
         $validacion = $repoIngreso->ValidarDatos();
         if($validacion === true)
-            return $repoIngreso->guardar();
+        {
+            $id = $repoIngreso->guardar();
+            return route($this->view.'index');
+        }
         else
             return $validacion;
     }
@@ -59,23 +63,22 @@ class IngresosController extends Controller
 
     public function edit($id)
     {
-        dd($id);
-    }
+//        dd($this->repoIngreso);
+        $ingreso = $this->repoIngreso->getModel()->find($id);
+        $form_data = ['route' => [$this->view.'store'], 'method' => 'POST','enctype' => 'multipart/form-data','id' => 'frmIngreso'];
+        $accion = "Editar";
+        return \View::Make($this->view.'formulario',compact("form_data","action","ingreso","accion"));    }
 
     public function exportarPDF(Ingresos $ingresos)
     {
         $ingreso = $ingresos;
-        /*foreach ($entidad->personalXEntidad as $p)
-        {
-            $p->personal->cargo_personal = $p->personal->cargo->descripcion;
-            $p->personal->tipo_persona = $p->personal->objTipoPersona->descripcion;
-            array_push($lista,$p->personal);
-        }
-        $entidad->personalXEntidad = $lista;
-        */
-
-        $pdf = PDF::loadView('ingresos.PDF', compact("ingreso"));
+        $ban = true;
+        $pdf = PDF::loadView('ingresos.PDF', compact("ingreso","ban"));
         return $pdf->download("Ingreso.pdf");
+
+
+
+
     }
 
 
