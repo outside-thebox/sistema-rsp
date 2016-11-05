@@ -113,12 +113,16 @@ class RepoIngreso extends RepoBase
     {
         if(isset($data['foto']['archivos']))
             $this->getRepoIngresoFotos()->save($id,$data['foto']['archivos']);
+    }
 
-
-
-
-
-
+    public function darImagenes($ingresos_fotos)
+    {
+        $array = [];
+        foreach($ingresos_fotos as $foto)
+        {
+            array_push($array,FunctionsSpecials::darImagen($foto->foto));
+        }
+        return $array;
     }
 
 

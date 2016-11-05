@@ -58,6 +58,7 @@
 
             $(".select").dropdown({ "autoinit" : ".select" });
             $(".fecha").mask("99/99/9999");
+            $(".dni").mask('AAAAAAAAAAAAAAAAAAAA');
 
             $("#frmIngreso").on("submit", function(e){
 

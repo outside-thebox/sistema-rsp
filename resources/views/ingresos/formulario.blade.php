@@ -60,7 +60,7 @@
             </div>
             <div class="form-group label-floating col-md-6">
                 {{ Form::label('nro_documento_declarado', 'Número de documento declarado',['class' => 'control-label']) }}
-                {{ Form::text('nro_documento_declarado',null, ['class' => 'form-control','maxlength' => 20]) }}
+                {{ Form::text('nro_documento_declarado',null, ['class' => 'form-control dni','maxlength' => 20]) }}
             </div>
             <div class="form-group label-floating col-md-6">
                 {{ Form::label('origen_documento_declarado', 'Origen de documento declarado',['class' => 'control-label']) }}
@@ -80,7 +80,7 @@
             </div>
             <div class="form-group label-floating col-md-6">
                 {{ Form::label('nro_documento_real', 'Número de documento real',['class' => 'control-label']) }}
-                {{ Form::text('nro_documento_real',null, ['class' => 'form-control','maxlength' => 20]) }}
+                {{ Form::text('nro_documento_real',null, ['class' => 'form-control dni','maxlength' => 20]) }}
             </div>
             <div class="form-group label-floating col-md-6">
                 {{ Form::label('origen_documento_real', 'Origen de documento real',['class' => 'control-label']) }}

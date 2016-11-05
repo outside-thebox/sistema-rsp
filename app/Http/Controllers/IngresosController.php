@@ -58,7 +58,8 @@ class IngresosController extends Controller
     public function show(Ingresos $ingresos)
     {
         $ingreso = $ingresos;
-        return \View::make($this->view."show",compact('ingreso'));
+        $titulo = "Ver un ingreso";
+        return \View::make($this->view."show",compact('ingreso','titulo'));
     }
 
     public function edit($id)
@@ -73,11 +74,40 @@ class IngresosController extends Controller
     {
         $ingreso = $ingresos;
         $ban = true;
-        $pdf = PDF::loadView('ingresos.PDF', compact("ingreso","ban"));
+        $titulo = $this->darTitulo($ingreso);
+
+        $ingreso->imagenes = $this->repoIngreso->darImagenes($ingreso->ingresos_fotos);
+
+        $pdf = PDF::loadView('ingresos.PDF', compact("ingreso","ban","titulo"));
         return $pdf->download("Ingreso.pdf");
+    }
 
+    private function darTitulo($ingreso)
+    {
+        if($ingreso->nombre_declarado != "" && $ingreso->apellido_declarado != "" && $ingreso->nro_documento_declarado)
+        {
+            return $ingreso->nombre_declarado." ".$ingreso->apellido_declarado. ", ".$ingreso->nro_documento_declarado;
+        }
+        else
+        {
+            $titulo = "";
+            if($ingreso->nombre_declarado != "")
+            {
+                $titulo .= $ingreso->nombre_declarado;
+            }
 
+            if($ingreso->apellido_declarado != "")
+            {
+                $titulo .= $ingreso->apellido_declarado;
+            }
 
+            if($ingreso->nro_documento_declarado != "")
+            {
+                $titulo .= ", ".$ingreso->apellido_declarado;
+            }
+
+            return $titulo;
+        }
 
     }
 

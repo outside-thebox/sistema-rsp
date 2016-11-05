@@ -7,7 +7,7 @@
 </style>
 
 <div class="container">
-    <h1>Ver un ingreso</h1>
+    <h1 style="text-align: center">{{ $titulo }}</h1>
 
     <div class="row">
         <div class="form-group label-floating col-md-6 letra">
@@ -28,9 +28,19 @@
         </div>
 
     </div>
+
     @if(!isset($ban))
         @include('ingresos.fotos')
+    @else
+        @foreach($ingreso->imagenes as $foto)
+            @if(is_object($foto))
+                <div class="col-md-2" style="cursor: zoom-in; margin-top: 20px">
+                    {{ $foto }}
+                </div>
+            @endif
+        @endforeach
     @endif
+
     <fieldset style="margin-top: 30px">
         <legend>Datos complementarios del detenido</legend>
 

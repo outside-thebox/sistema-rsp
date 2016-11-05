@@ -87,5 +87,13 @@ class FunctionsSpecials
         return $array;
     }
 
+    public static function darImagen($path)
+    {
+//        dd($path);
+        return \Html::image($path, "Imagen no encontrada",array("class"=>'file-preview-image','style' => "width: 150px;"));
+    }
+
+
+
 
 } 
