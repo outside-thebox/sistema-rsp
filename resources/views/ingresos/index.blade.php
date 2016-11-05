@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('scripts')
+    {!! Html::script('assets/js/jquery.mask.js') !!}
 
     <script>
 
@@ -10,7 +11,7 @@
         {
             $("#table").empty();
             var data_pagina = data.data;
-            console.log(data);
+//            console.log(data);
             var data = data.data.data;
             if(data.length){
                 $("#sin_datos").addClass("hidden");
@@ -92,15 +93,23 @@
             var params = "";
 
 
-            var fecha_ingreso_array = $('input:text[name=fecha_ingreso]').val().split('/');
-            var fecha_ingreso = fecha_ingreso_array[2] + '-' + fecha_ingreso_array[1] + '-' + fecha_ingreso_array[0];
+            if($('input:text[name=fecha_ingreso]').val() != "")
+            {
+                var fecha_ingreso_array = $('input:text[name=fecha_ingreso]').val().split('/');
+                var fecha_ingreso = fecha_ingreso_array[2] + '-' + fecha_ingreso_array[1] + '-' + fecha_ingreso_array[0];
+                params += "like[fecha_ingreso]="+fecha_ingreso;
+            }
 
-            var fecha_nacimiento_array = $('input:text[name=fecha_nacimiento]').val().split('/');
-            var fecha_nacimiento = fecha_nacimiento_array[2] + '-' + fecha_nacimiento_array[1] + '-' + fecha_nacimiento_array[0];
-
-            params += "like[fecha_ingreso]="+fecha_ingreso;
-            params += "&like[apellido_declarado]="+ $('input:text[name=apellido_declarado]').val();
-            params += "&like[fecha_nacimiento]="+fecha_nacimiento;
+            if($('input:text[name=fecha_nacimiento]').val() != "")
+            {
+                var fecha_nacimiento_array = $('input:text[name=fecha_nacimiento]').val().split('/');
+                var fecha_nacimiento = fecha_nacimiento_array[2] + '-' + fecha_nacimiento_array[1] + '-' + fecha_nacimiento_array[0];
+                params += "&like[fecha_nacimiento]="+fecha_nacimiento;
+            }
+            if($('input:text[name=apellido_declarado]').val() != "")
+            {
+                params += "&like[apellido_declarado]="+ $('input:text[name=apellido_declarado]').val();
+            }
 
             return params;
         }
@@ -132,7 +141,7 @@
             if(url == '') url = "{{route('api.v1.ingresos.index')}}" + "?" + "page=1";
 
             var queryString = url + "&" + filtroIngresos;
-
+//            console.log(queryString);
             if(excel===true) {
                 var href = root + "?urlAPI=" + encodeURIComponent(queryString);
                 $("#btnExportar").attr("href",href);
@@ -143,11 +152,13 @@
 
         }
 
+
+
         $(function(){
 
             $.material.init();
-            $('.fecha').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
-
+//            $('.fecha').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
+            $(".fecha").mask("99/99/9999");
 
 
 
@@ -161,10 +172,27 @@
 
             $('#buscar').on('click', function(e) {
 
-                if($("input:text[name='fecha_ingreso']").val() != "" && $("input:text[name='apellido_declarado']").val() != "" && $("input:text[name='fecha_nacimiento']").val() != "")
-                    buscar(false,'');
+                if($("input:text[name='fecha_ingreso']").val() != "" || $("input:text[name='apellido_declarado']").val() != "" || $("input:text[name='fecha_nacimiento']").val() != "")
+                {
+//                    console.log($("input:text[name='fecha_ingreso']").val());
+                    var ban = true;
+                    if(validDate($("input:text[name='fecha_ingreso']").val(),"Fecha de ingreso"))
+                    {
+                        ban = false;
+                    }
+                    if(validDate($("input:text[name='fecha_nacimiento']").val(),"Fecha de nacimiento"))
+                    {
+                        ban = false;
+                    }
+
+                    if(ban)
+                    {
+//                        console.log();
+                        buscar(false,'');
+                    }
+                }
                 else
-                    darMensaje("Los tres campos son obligatorios para realizar la búsqueda");
+                    darMensaje("Debe completar al menos un campo");
 //                    console.log("hola");
             });
 

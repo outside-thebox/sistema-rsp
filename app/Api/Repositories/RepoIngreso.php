@@ -44,7 +44,33 @@ class RepoIngreso extends RepoBase
 
     private function prepareData($data)
     {
-//        dd($data);
+        if($data['tipo_documento_declarado_id'] == 0)
+            unset($data['tipo_documento_declarado_id']);
+
+        if($data['tipo_documento_real_id'] == 0)
+            unset($data['tipo_documento_real_id']);
+
+        if($data['nacionalidad_id'] == 0)
+            unset($data['nacionalidad_id']);
+
+        if($data['genero_id'] == 0)
+            unset($data['genero_id']);
+
+        if($data['estado_civil_id'] == 0)
+            unset($data['estado_civil_id']);
+
+        if($data['profesion_id'] == 0)
+            unset($data['profesion_id']);
+
+        if($data['jurisdiccion_id'] == 0)
+            unset($data['jurisdiccion_id']);
+
+        if($data['situacion_legal_id'] == 0)
+            unset($data['situacion_legal_id']);
+
+        if($data['causa_existente_id'] == 0)
+            unset($data['causa_existente_id']);
+
         if($data['fecha_ingreso'])
             $data['fecha_ingreso'] = FunctionsSpecials::DateNormalToMysql($this->data['fecha_ingreso']);
 

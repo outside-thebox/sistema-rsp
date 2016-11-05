@@ -1,8 +1,27 @@
 @section('scripts')
 
+    {!! Html::script('assets/js/jquery.mask.js') !!}
     @include('ingresos.shared_functions')
 
     <script>
+
+        function validarFechas()
+        {
+            if(validDate($("input:text[name='fecha_ingreso']").val(),"Fecha de ingreso"))
+            {
+                return false;
+            }
+            if(validDate($("input:text[name='fecha_nacimiento']").val(),"Fecha de nacimiento"))
+            {
+                return false;
+            }
+            if(validDate($("input:text[name='fecha_egreso']").val(),"Fecha de egreso"))
+            {
+                return false;
+            }
+            return true;
+        }
+
         $(function () {
             $.material.init();
 
@@ -30,25 +49,25 @@
 //            $('.fecha').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
 
 
-            $('#fecha_nacimiento').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
+            /*$('#fecha_nacimiento').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
             $('#fecha_egreso').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
             $('#fecha_ingreso').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false}).on('change', function(e, date)
             {
                 $('#fecha_egreso').bootstrapMaterialDatePicker('setMinDate', date);
-            });
+            });*/
 
             $(".select").dropdown({ "autoinit" : ".select" });
+            $(".fecha").mask("99/99/9999");
 
             $("#frmIngreso").on("submit", function(e){
 
                 e.preventDefault();
-//                if(validarPaso3())
-//                {
-                var formData = new FormData(document.getElementById("frmIngreso"));
-//            formData.append("id_oficio",$("#id").val());
-                var destino = "{{ Route('ingresos.store') }}";
-                peticionAjax(destino,formData,"Redireccionar");
-//                }
+                if(validarFechas())
+                {
+                    var formData = new FormData(document.getElementById("frmIngreso"));
+                    var destino = "{{ Route('ingresos.store') }}";
+                    peticionAjax(destino,formData,"Redireccionar")
+                }
 
             });
 

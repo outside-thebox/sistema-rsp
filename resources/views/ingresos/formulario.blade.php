@@ -14,7 +14,7 @@
         <div class="row">
             <div class="form-group label-floating col-md-6">
                 {{ Form::label('fecha_ingreso', 'Fecha de ingreso',['class' => 'control-label']) }}
-                {{ Form::text( 'fecha_ingreso',null, ['class' => 'form-control','id' => 'fecha_ingreso']) }}
+                {{ Form::text( 'fecha_ingreso',null, ['class' => 'form-control fecha','id' => 'fecha_ingreso']) }}
             </div>
             <div class="form-group label-floating col-md-6">
                 {{ Form::label('apellido_declarado', 'Apellido declarado',['class' => 'control-label']) }}
@@ -120,7 +120,7 @@
             </div>
             <div class="form-group label-floating col-md-6">
                 {{ Form::label('fecha_egreso', 'Fecha de egreso',['class' => 'control-label']) }}
-                {{ Form::text( 'fecha_egreso',null, ['class' => 'form-control','id' => 'fecha_egreso']) }}
+                {{ Form::text( 'fecha_egreso',null, ['class' => 'form-control fecha','id' => 'fecha_egreso']) }}
             </div>
 
             <div class="form-group col-md-12">

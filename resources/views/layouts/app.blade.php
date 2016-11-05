@@ -91,6 +91,7 @@
 
     {!! Html::script('assets/js/HoldOn.js') !!}
     {!! Html::script('assets/js/moment.min.js') !!}
+    {!! Html::script('assets/js/functions.js') !!}
     {!! Html::script('assets/js/bootstrap-material-datetimepicker.js') !!}
     {!! Html::script('bootstrap-material-design/js/material.min.js') !!}
     {!! Html::script('bootstrap-material-design/js/ripples.min.js') !!}
