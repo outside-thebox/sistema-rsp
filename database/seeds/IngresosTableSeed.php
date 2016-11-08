@@ -18,7 +18,7 @@ class IngresosTableSeed extends Seeder
 
     public function createRecords($total)
     {
-        $faker = Faker::create();
+        /*$faker = Faker::create();
 
         for($i = 1;$i <= $total;$i++)
         {
@@ -57,7 +57,7 @@ class IngresosTableSeed extends Seeder
                 'updated_at' => $faker->dateTimeThisMonth($max = 'now')
 
             ]);
-        }
+        }*/
 
     }
 }

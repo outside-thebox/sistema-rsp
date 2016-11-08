@@ -3,6 +3,7 @@
     function obtenerCombo(name,selected,url)
     {
         selected = selected || "";
+        url = url + "?orderBy[descripcion]=asc";
 //        $("select[name="+name+"_id]").empty();
 //        $("select[name="+name+"_id]").append("<option value=''>Seleccione</option>");
         $("select[name="+name+"_id]").append("<option value='0'>Seleccione</option>");

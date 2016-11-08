@@ -11,6 +11,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+         $this->call(EstadosCivilesSeeder::class);
+         $this->call(GenerosSeeder::class);
+         $this->call(JurisdiccionesSeeder::class);
+         $this->call(NacionalidadesSeeder::class);
+         $this->call(ProfesionesSeeder::class);
+         $this->call(SituacionesLegalesSeeder::class);
+         $this->call(TiposDocumentosSeeder::class);
          $this->call(IngresosTableSeed::class);
     }
 }
