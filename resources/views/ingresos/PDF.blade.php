@@ -168,8 +168,10 @@
     <fieldset>
         <legend>Datos judiciales</legend>
         <div class="form-group label-floating col-md-6 letra">
-            {{ Form::label('causa_existente_id', 'Causa existente:',['class' => 'control-label']) }}
-            {{ $ingreso->causa_existente->descripcion or '' }}
+            {{ Form::label('causa_existente_id', 'Causas existentes:',['class' => 'control-label']) }}
+            @foreach($ingreso->causas_existentes as $causa_existente)
+                <li style="margin-left: 10px">{{ $causa_existente->causa_existente->descripcion }}</li>
+            @endforeach
         </div>
     </fieldset>
 

@@ -32,6 +32,11 @@ class RepoIngreso extends RepoBase
         return new RepoIngresosFotos();
     }
 
+    private function getRepoIngresoCausaExistente()
+    {
+        return new RepoIngresoCausaExistente();
+    }
+
     public function ValidarDatos()
     {
         $manager = new ManagerIngreso($this->getModel(),$this->data);
@@ -68,8 +73,8 @@ class RepoIngreso extends RepoBase
         if($data['situacion_legal_id'] == 0)
             unset($data['situacion_legal_id']);
 
-        if($data['causa_existente_id'] == 0)
-            unset($data['causa_existente_id']);
+//        if($data['causa_existente_id'] == 0)
+//            unset($data['causa_existente_id']);
 
         if($data['fecha_ingreso'])
             $data['fecha_ingreso'] = FunctionsSpecials::DateNormalToMysql($this->data['fecha_ingreso']);
@@ -113,6 +118,8 @@ class RepoIngreso extends RepoBase
     {
         if(isset($data['foto']['archivos']))
             $this->getRepoIngresoFotos()->save($id,$data['foto']['archivos']);
+        if(isset($data['foto']['archivos']))
+            $this->getRepoIngresoCausaExistente()->save($id,$data['causa_existente_id']);
     }
 
     public function darImagenes($ingresos_fotos)

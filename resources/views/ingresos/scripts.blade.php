@@ -62,16 +62,17 @@
 
             $("#frmIngreso").on("submit", function(e){
 
+//                console.log("Seleccionados: "+$("select[name=causa_existente_id]").val());
                 e.preventDefault();
                 if(validarFechas())
                 {
                     var formData = new FormData(document.getElementById("frmIngreso"));
+                    formData.set('causa_existente_id',$("select[name=causa_existente_id]").val());
                     var destino = "{{ Route('ingresos.store') }}";
                     peticionAjax(destino,formData,"Redireccionar")
                 }
 
             });
-
 
             $(".agregar_foto").click(function (event) {
                 event.preventDefault();

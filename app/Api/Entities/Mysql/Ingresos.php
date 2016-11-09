@@ -61,10 +61,7 @@ class Ingresos extends Model implements ApiModelInterface{
 		return $this->hasOne('App\Api\Entities\Mysql\SituacionesLegales', 'id', 'situacion_legal_id');
 	}
 
-	public function causa_existente()
-	{
-		return $this->hasOne('App\Api\Entities\Mysql\CausasExistentes', 'id', 'causa_existente_id');
-	}
+
 
 	public function getFechaNacimientoAttribute()
 	{
@@ -86,4 +83,8 @@ class Ingresos extends Model implements ApiModelInterface{
 		return $this->hasMany('App\Api\Entities\Mysql\IngresosFotos', 'ingreso_id', 'id');
 	}
 
+    public function causas_existentes()
+    {
+        return $this->hasMany('App\Api\Entities\Mysql\IngresosCausasExistentes', 'ingreso_id', 'id');
+    }
 }

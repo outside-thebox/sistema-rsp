@@ -179,7 +179,7 @@
             <legend>Datos judiciales</legend>
             <div class="form-group label-floating col-md-6">
                 {{ Form::label('causa_existente_id', 'Causa existente',['class' => 'control-label']) }}
-                {{ Form::select('causa_existente_id',[], null, ['class' => 'form-control select']) }}
+                {{ Form::select('causa_existente_id',[], null, ['class' => 'form-control select','multiple' => true]) }}
             </div>
         </fieldset>
 

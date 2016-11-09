@@ -58,6 +58,7 @@ class IngresosController extends Controller
     public function show(Ingresos $ingresos)
     {
         $ingreso = $ingresos;
+//        dd($ingreso->causas_existentes[0]->causa_existente->descripcion);
         $titulo = "Ver un ingreso";
         return \View::make($this->view."show",compact('ingreso','titulo'));
     }

@@ -47,3 +47,4 @@ Route::group(['prefix' => 'api'], function () {
         Route::resource('tipos_documentos','Api\Mysql\TiposDocumentosController');
     });
 });Route::resource('ingresos_fotos','Api\Mysql\IngresosFotosController'); 
+Route::resource('ingresos_causas_existentes','Api\Mysql\IngresosCausasExistentesController'); 

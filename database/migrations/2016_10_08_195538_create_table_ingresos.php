@@ -44,7 +44,7 @@ class CreateTableIngresos extends Migration
             $table->boolean('procesos_pendientes');
             $table->integer('situacion_legal_id')->unsigned()->nullable();
             $table->text('observaciones');
-            $table->integer('causa_existente_id')->unsigned()->nullable();
+            $table->string('causa_existente_id',100)->nullable();
             $table->timestamps();
             $table->softDeletes();
 
@@ -58,7 +58,6 @@ class CreateTableIngresos extends Migration
             $table->foreign('profesion_id')->references('id')->on('profesiones');
             $table->foreign('jurisdiccion_id')->references('id')->on('jurisdicciones');
             $table->foreign('situacion_legal_id')->references('id')->on('situaciones_legales');
-            $table->foreign('causa_existente_id')->references('id')->on('causas_existentes');
         });
     }
 
