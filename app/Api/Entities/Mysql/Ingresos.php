@@ -87,4 +87,16 @@ class Ingresos extends Model implements ApiModelInterface{
     {
         return $this->hasMany('App\Api\Entities\Mysql\IngresosCausasExistentes', 'ingreso_id', 'id');
     }
+
+    public function ids_causas_existentes()
+    {
+        $list = $this->hasMany('App\Api\Entities\Mysql\IngresosCausasExistentes', 'ingreso_id', 'id');
+        $mensaje = "";
+        foreach($list as $l)
+        {
+            $mensaje .= "Hola";
+        }
+        return $mensaje;
+    }
+
 }

@@ -65,11 +65,27 @@ class IngresosController extends Controller
 
     public function edit($id)
     {
-//        dd($this->repoIngreso);
         $ingreso = $this->repoIngreso->getModel()->find($id);
+        $ingreso->ids_causas_existentes = $this->darIdsCausasExistentes($ingreso->causas_existentes);
+//        dd($ingreso->ids_causas_existentes);
         $form_data = ['route' => [$this->view.'store'], 'method' => 'POST','enctype' => 'multipart/form-data','id' => 'frmIngreso'];
         $accion = "Editar";
-        return \View::Make($this->view.'formulario',compact("form_data","action","ingreso","accion"));    }
+        return \View::Make($this->view.'formulario',compact("form_data","action","ingreso","accion"));
+    }
+
+    private function darIdsCausasExistentes($list)
+    {
+        $mensaje = "";
+        foreach($list as $l)
+        {
+            if($mensaje == "")
+               $mensaje .= $l->causa_existente_id;
+            else
+                $mensaje .= ",".$l->causa_existente_id;
+        }
+        return $mensaje;
+    }
+
 
     public function exportarPDF(Ingresos $ingresos)
     {

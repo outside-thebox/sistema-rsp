@@ -34,7 +34,7 @@
                 obtenerCombo("profesion","{{ $ingreso->profesion_id }}","{{route('api.v1.profesiones.index')}}");
                 obtenerCombo("jurisdiccion","{{ $ingreso->jurisdiccion_id }}","{{route('api.v1.jurisdicciones.index')}}");
                 obtenerCombo("situacion_legal","{{ $ingreso->situacion_legal_id }}","{{route('api.v1.situaciones_legales.index')}}");
-                obtenerCombo("causa_existente","{{ $ingreso->causa_existente_id }}","{{route('api.v1.causas_existentes.index')}}");
+                obtenerComboMultiple("causa_existente","{{ $ingreso->ids_causas_existentes }}","{{route('api.v1.causas_existentes.index')}}");
             @else
                 obtenerCombo("tipo_documento_declarado","","{{route('api.v1.tipos_documentos.index')}}");
                 obtenerCombo("tipo_documento_real","","{{route('api.v1.tipos_documentos.index')}}");

@@ -22,7 +22,10 @@ class RepoIngresoCausaExistente {
                 $data = [];
                 $data['ingreso_id'] = $ingreso_id;
                 $data['causa_existente_id'] = $causa_existente_id;
-                $model = new IngresosCausasExistentes($data);
+//                $model = new IngresosCausasExistentes($data);
+                $model = new IngresosCausasExistentes();
+                $model = $model->firstOrNew(['ingreso_id' => $ingreso_id,'causa_existente_id' => $causa_existente_id]);
+//                dd($model);
                 $model->save();
         }
     }
