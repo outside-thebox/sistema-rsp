@@ -44,7 +44,7 @@
                 obtenerCombo("profesion","","{{route('api.v1.profesiones.index')}}");
                 obtenerCombo("jurisdiccion","","{{route('api.v1.jurisdicciones.index')}}");
                 obtenerCombo("situacion_legal","","{{route('api.v1.situaciones_legales.index')}}");
-                obtenerCombo("causa_existente","","{{route('api.v1.causas_existentes.index')}}");
+                obtenerComboMultiple("causa_existente","","{{route('api.v1.causas_existentes.index')}}");
             @endif
 //            $('.fecha').bootstrapMaterialDatePicker({format:'DD/MM/YYYY',time:false});
 

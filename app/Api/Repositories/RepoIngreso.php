@@ -118,8 +118,11 @@ class RepoIngreso extends RepoBase
     {
         if(isset($data['foto']['archivos']))
             $this->getRepoIngresoFotos()->save($id,$data['foto']['archivos']);
-        if(isset($data['foto']['archivos']))
+        if($data['causa_existente_id'] != "null")
+        {
+//            dd($data);
             $this->getRepoIngresoCausaExistente()->save($id,$data['causa_existente_id']);
+        }
     }
 
     public function darImagenes($ingresos_fotos)
