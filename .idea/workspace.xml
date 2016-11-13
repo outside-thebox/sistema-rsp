@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="178809ab-c316-4869-be81-648e116dbd30" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Api/Repositories/RepoIngreso.php" afterPath="$PROJECT_DIR$/app/Api/Repositories/RepoIngreso.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/ingresos/scripts.blade.php" afterPath="$PROJECT_DIR$/resources/views/ingresos/scripts.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/ingresos/shared_functions.blade.php" afterPath="$PROJECT_DIR$/resources/views/ingresos/shared_functions.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Api/Repositories/RepoIngresoCausaExistente.php" afterPath="$PROJECT_DIR$/app/Api/Repositories/RepoIngresoCausaExistente.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sistema-rsp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shared_functions.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shared_functions.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/ingresos/shared_functions.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39912918">
+            <state vertical-scroll-proportion="0.0">
               <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
               <folding />
             </state>
@@ -86,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepoIngresoCausaExistente.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RepoIngresoCausaExistente.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Api/Repositories/RepoIngresoCausaExistente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5486212">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,6 +147,7 @@
         <option value="$PROJECT_DIR$/resources/views/ingresos/scripts.blade.php" />
         <option value="$PROJECT_DIR$/app/Api/Repositories/RepoIngreso.php" />
         <option value="$PROJECT_DIR$/resources/views/ingresos/shared_functions.blade.php" />
+        <option value="$PROJECT_DIR$/app/Api/Repositories/RepoIngresoCausaExistente.php" />
       </list>
     </option>
   </component>
@@ -772,14 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Api/Repositories/RepoIngresoCausaExistente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ingresos/scripts.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -796,6 +787,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ingresos/shared_functions.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Api/Repositories/RepoIngreso.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -804,10 +803,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ingresos/shared_functions.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Api/Repositories/RepoIngresoCausaExistente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39912918">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.5486212">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
